@@ -231,6 +231,16 @@ class AllJobs extends Component {
         }),
         this.getJobsDetails,
       )
+    } else {
+      const {searchEmploymentType} = this.state
+      const uncheckedItemIndex = searchEmploymentType.indexOf(
+        event.target.value,
+      )
+      searchEmploymentType.splice(uncheckedItemIndex, 1)
+      this.setState(
+        {searchEmploymentType: [...searchEmploymentType]},
+        this.getJobsDetails,
+      )
     }
   }
 

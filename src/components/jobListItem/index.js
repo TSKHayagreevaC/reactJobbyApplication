@@ -21,7 +21,7 @@ const JobListItem = props => {
         <div className="job-list-item-container">
           <div className="list-item-image-container">
             <img
-              className="list-item-image"
+              className="job-list-item-image"
               src={companyLogoUrl}
               alt="company logo"
             />
@@ -35,10 +35,10 @@ const JobListItem = props => {
           </div>
           <div className="job-location-type-package-container">
             <div className="job-location-type-container">
-              <BsGeoAlt className="location-icon" />
-              <p className="job-location-text">{location}</p>
-              <BsBriefcaseFill className="employment-icon" />
-              <p className="job-type-text">{employmentType}</p>
+              <BsGeoAlt className="job-location-icon" />
+              <p className="job-item-location-text">{location}</p>
+              <BsBriefcaseFill className="job-type-icon" />
+              <p className="job-item-type-text">{employmentType}</p>
             </div>
             <p className="package-text">{packagePerAnnum}</p>
           </div>
