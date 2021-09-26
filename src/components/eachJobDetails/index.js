@@ -139,7 +139,7 @@ class EachJobDetails extends Component {
     const {skillsList} = this.state
     return (
       <div className="skills-container">
-        <p className="skills-heading">Skills</p>
+        <h1 className="skills-heading">Skills</h1>
         <div className="skills-image-text-list">
           {skillsList.map(eachItem => (
             <div className="each-skill-list-item" key={eachItem.name}>

@@ -64,8 +64,8 @@ class AllJobs extends Component {
   }
 
   componentDidMount() {
-    this.getJobsDetails()
     this.getProfileDetails()
+    this.getJobsDetails()
   }
 
   getJobsDetails = async () => {
@@ -249,7 +249,7 @@ class AllJobs extends Component {
       <h1 className="employment-type-heading">Type of Employment</h1>
       <ul className="employment-type-list">
         {employmentTypesList.map(eachItem => (
-          <li className="employment-list-item" key={eachItem.employmentTypeId}>
+          <li key={eachItem.employmentTypeId} className="employment-list-item">
             <div className="employment-list-item-container">
               <input
                 type="checkbox"
@@ -279,7 +279,7 @@ class AllJobs extends Component {
       <h1 className="employment-type-heading">Salary Range</h1>
       <ul className="employment-type-list">
         {salaryRangesList.map(eachItem => (
-          <li className="employment-list-item" key={eachItem.salaryRangeId}>
+          <li key={eachItem.salaryRangeId} className="employment-list-item">
             <div className="employment-list-item-container">
               <input
                 type="radio"
